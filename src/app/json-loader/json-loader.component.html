@@ -1,0 +1,29 @@
+<h2>Random Shop Products</h2>
+
+<div class="container-flex">
+    <!--<input type="text" placeholder="Search products" [(ngModel)]="newSearch" (input)="searchDB()" />-->
+    <input type="text" placeholder="Search products" [(ngModel)]="newSearch" (input)="onSearch()" />
+</div>
+
+<div id="search-container">
+
+    <div *ngFor="let product of displayedProducts">
+        <h3>Title: {{ product.title }}</h3>
+        <p><span>Id:</span> {{ product.id }}</p>
+        <p><span>Suppliername:</span> {{ product.suppliername }}</p>
+        <p><span>Price:</span> {{ product.price }}</p>
+    </div> 
+
+</div>
+
+<div class="container-flex">
+    <button (click)="goToPage(currentPage - 1)" [disabled]="currentPage === 1">Previous</button>
+    <button (click)="goToPage(currentPage + 1)" [disabled]="currentPage === totalPages">Next</button>
+</div>
+
+<div class="container-flex">
+    <p><span>Current Page:</span> {{ currentPage }}</p>
+    <p><span>Total Pages:</span> {{ totalPages }}</p>
+</div>
+
+

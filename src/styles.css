@@ -1,1 +1,72 @@
 /* You can add global styles to this file, and also import other style files */
+app-root {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+app-json-loader {
+    width: 100%;
+}
+
+#search-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#search-container > div {
+    /*border: solid 1px black;*/
+    padding: 15px;
+    width: 100%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+#search-container > div:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+#search-container > div > h3 {
+    margin: 2px;
+}
+
+#search-container > div > p {
+    margin: 2px;
+    font-weight: 100;
+}
+
+#search-container > div > p > span {
+    font-weight: bold;
+}
+
+.container-flex {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.align-column {
+    flex-direction: column;
+}
+
+.container-flex.align-column > h4 {
+    text-align: center;
+}
+
+.container-flex > p > span {
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+}
+
+pre {
+    background-color: lightgray;
+}
